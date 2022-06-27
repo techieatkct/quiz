@@ -1,0 +1,393 @@
+body{
+	width: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: default;
+	-webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* INSTRUCTIONS */
+
+#instructions{
+	width: 20%;
+	margin: auto;
+  text-align: center;
+  background-color: darkgreen;
+  padding: 20px;
+  margin-top: 100px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+}
+
+/* QUIZ */
+
+/* MAIN CONTAINER */
+
+.main_container{
+	width: 70%;
+	background-color: black;
+	height: 745px;
+	position: absolute;
+}
+.heading{
+	margin: auto;
+	width: 80%;
+	background-color: black;
+	color: darkgreen;
+	margin-top: 20px;
+	text-align: center;
+	border: 2px solid lightgreen;
+	border-radius: 5px;
+	padding: 5px;
+}
+form{
+	margin-top: 100px;
+	font-size: 25px;
+}
+input[type='radio']{
+	accent-color: darkgreen  ;
+}
+#myname{
+	margin-top: 0px;
+	margin-left: auto;
+}
+.threebtns{
+	height: 35px;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: 20px;
+	width: 80px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: black;
+	border: 2px solid lightgreen;
+	color: white;
+}
+.threebtns:hover{
+	background-color: lightgreen;
+	color: black;
+	border: 2px solid orange;
+}
+/* POPUP */
+
+.popup .overlay{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 1;
+	visibility: hidden;
+}
+.popup .content {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	width: 450px;
+	height: 180px;
+	z-index: 2;
+	visibility: hidden;
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+}
+h3{
+	margin-left: 20px;
+}
+.popup .close-btn{
+	width: 50%;
+	float: left;
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 40px;
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+	box-sizing: border-box;
+	margin-top: 140px;
+	border-bottom: 0px;
+	border-left: 0px;
+}
+.popup #save-btn{
+	width: 50%;
+	float: right;
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 40px;
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+	box-sizing: border-box;
+	margin-top: 140px;
+	border-bottom: 0px;
+	border-right: 0px;
+	border-left: 0px;
+}
+.popup .close-btn:hover{
+	background-color: lightpink;
+	color: black;
+	cursor: pointer;
+}
+.popup #save-btn:hover{
+	background-color: lightgreen;
+	color: black;
+	cursor: pointer;
+}
+
+/* SIDE CONTAINER */
+
+.side_container{
+	width: 30%;
+	background-color: black;
+	border-left: 2px solid lightgreen;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 745px;
+	float: right;
+	position: relative;
+}
+.grid-item {
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+.grid-item:hover{
+	background-color: lightgreen;
+	cursor: pointer;
+}
+.first_submit{
+	height: 40px;
+	width: 70px;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	border: 2px solid lightgreen;
+}
+.first_submit:hover{
+	background-color: lightgreen;
+	color: black;
+	border: 2px solid orange;
+	cursor: pointer;
+}
+
+/* RESULTS */
+
+#results_container{
+	width: 400px;
+	height: 200px;
+	background-color: darkgreen;
+	color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 200px;
+}
+#resultsheading{
+	text-align: center;
+}
+#namediv{
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+#finalscorediv{
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+/* ALERT */
+
+#timealert{
+	position: absolute;
+	text-align: center;
+	font-weight: bold;
+	line-height: 35px;
+	width: 30%;
+	height: 35px;
+	color: white;
+	background-color: orange;
+	border: 2px solid white;
+	border-radius: 5px;
+	visibility: hidden;
+	margin-top: 30px;
+	margin-left: 35%;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 1200px){
+.time_rem{
+	position: absolute;
+	color: white;
+	width: 210px;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 100px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+#timer{
+	margin-top: 90px;
+	font-size: 25px;
+	font-weight: bold;
+	float: right;
+	margin-right: 40px;
+	padding: 10px;
+	border: 2px solid lightgreen;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	width: 55px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  /*background-color: #2196F3;*/
+  background-color: black;
+  margin-top: 200px;
+}
+.first_submit{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+form{
+	margin-left: 100px;
+	width: 70%;
+	border: 2px solid lightgreen;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+}
+.popup .content{
+	top: 40%;
+	left: 73%;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+.time_rem{
+	width: 210px;
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 100px;
+	margin-left: 5px;
+}
+#timer{
+	margin-top: 20px;
+	font-size: 25px;
+	font-weight: bold;
+	float: left;
+	margin-left: 5px;
+	padding: 10px;
+	border: 2px solid lightgreen;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	width: 55px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: black;
+  margin-top: 100px;
+}
+.first_submit{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+form{
+	margin-left: 50px;
+	width: 60%;
+	border: 2px solid lightgreen;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+}
+.popup .content{
+	top: 40%;
+	left: 73%;
+}
+}
+
+@media (min-width: 500px) and (max-width: 991px){
+.time_rem{
+	display: none;
+}
+#timer{
+	height: 30px;
+	margin-top: 20px;
+	font-size: 25px;
+	font-weight: bold;
+	float: left;
+	margin-left: 5px;
+	padding: 10px;
+	border: 2px solid lightgreen;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	width: 55px;
+}
+.grid-container {
+  background-color: black;
+  margin-top: 100px;
+}
+.first_submit{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+form{
+	margin-left: 20px;
+	width: 85%;
+	border: 2px solid lightgreen;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+}
+.popup .content{
+	top: 40%;
+	left: 73%;
+	width: 300px;
+}
+.heading{
+	margin-left: 13px;
+}
+}
+
+@media (max-width: 700px){
+form{
+	width: 75%;
+}
+.threebtns{
+	width: 78px;
+}
+
+#one:hover{
+	background-color: lightgreen;
+}
+
+#myname{
+	width: 90%;
+}
+#instructions{
+	width: 50%;
+}
+h2{
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+}

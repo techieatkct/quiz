@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="main_container">
+		<h1 class="heading">Ragul Adhithya M</h1>
+
+		<div id="timealert">
+			Only 2 minutes left!
+		</div>
+
+		<div class="popup" id="popup-1">
+			<div id="overlay" class="overlay"></div>
+			<div id="content" class="content">
+				<div id="cancel" class="close-btn">Cancel</div>
+				<div id="save-btn">Submit</div>
+				<h3 style="position: absolute;color: lightgreen;">Are you sure, you want to submit?</h3>
+			</div>
+		</div>
+
+		<form style="position: absolute;" id="q1">
+			<p style="font-weight:bold;">Question 1:</p>
+			<p>What is 2+3 ?</p>
+			<input required type="radio" name='q1' id="q1_1">5</br>
+			<input type="radio" name='q1' id="q1_2">4</br>
+			<button type="button" id="save1"  class="threebtns">Save</button>
+			<button type="reset"  id="clear1" class="threebtns">Clear</button>
+			<button type="reset"  id="skip1"  class="threebtns">Skip</button>
+		</form>
+
+		<form style="visibility: hidden;position: absolute;" id="q2">
+			<p style="font-weight:bold;">Question 2:</p>
+			<p>What is 3+3 ?</p>
+			<input type="radio" name='q2' id="q2_1">5</br>
+			<input type="radio" name='q2' id="q2_2">6</br>
+			<button type="button" id="save2"  class="threebtns">Save</button>
+			<button type="reset"  id="clear2" class="threebtns">Clear</button>
+			<button type="reset"  id="skip2"  class="threebtns">Skip</button>
+		</form>
+
+		<form style="visibility: hidden;position: absolute;" id="q3">
+			<p style="font-weight:bold;">Question 3:</p>
+			<p>What is 10+3 ?</p>
+			<input type="radio" name='q3' id="q3_1">18</br>
+			<input type="radio" name='q3' id="q3_2">13</br>
+			<button type="button" id="save3"  class="threebtns">Save</button>
+			<button type="reset"  id="clear3" class="threebtns">Clear</button>
+			<button type="reset"  id="skip3"  class="threebtns">Skip</button>
+		</form>
+
+		<form style="visibility: hidden;position: absolute;" id="q4">
+			<p style="font-weight:bold;">Question 4:</p>
+			<p>What is 10+13 ?</p>
+			<input type="radio" name='q4' id="q4_1">48</br>
+			<input type="radio" name='q4' id="q4_2">23</br>
+			<button type="button" id="save4"  class="threebtns">Save</button>
+			<button type="reset"  id="clear4" class="threebtns">Clear</button>
+			<button type="reset"  id="skip4"  class="threebtns">Skip</button>
+		</form>
+
+		<form style="visibility: hidden;position: absolute;" id="q5">
+			<p style="font-weight:bold;">Question 5:</p>
+			<p>What is 10-13 ?</p>
+			<input type="radio" name='q5' id="q5_1">-3</br>
+			<input type="radio" name='q5' id="q5_2">3</br>
+			<button type="button" id="save5"  class="threebtns">Save</button>
+			<button type="reset"  id="clear5" class="threebtns">Clear</button>
+			<button type="reset"  id="skip5"  class="threebtns">Skip</button>
+		</form>
+
+		<form style="visibility: hidden;position: absolute;" id="q6">
+			<p style="font-weight:bold;">Question 6:</p>
+			<p>What is 10x13 ?</p>
+			<input type="radio" name='q6' id="q6_1">142</br>
+			<input type="radio" name='q6' id="q6_2">130</br>
+			<button type="button" id="save6"  class="threebtns">Save</button>
+			<button type="reset"  id="clear6" class="threebtns">Clear</button>
+			<button type="reset"  id="skip6"  class="threebtns">Skip</button>
+		</form>
+
+		<form style="visibility: hidden;position: absolute;" id="q7">
+			<p style="font-weight:bold;">Question 7:</p>
+			<p>What is 8 % 2 ?</p>
+			<input type="radio" name='q7' id="q7_1">0</br>
+			<input type="radio" name='q7' id="q7_2">1</br>
+			<button type="button" id="save7"  class="threebtns">Save</button>
+			<button type="reset"  id="clear7" class="threebtns">Clear</button>
+			<button type="reset"  id="skip7"  class="threebtns">Skip</button>
+		</form>
+
+		<form style="visibility: hidden;position: absolute;" id="q8">
+			<p style="font-weight:bold;">Question 8:</p>
+			<p>What is 90 / 2 ?</p>
+			<input type="radio" name='q8' id="q8_1">55</br>
+			<input type="radio" name='q8' id="q8_2">45</br>
+			<button type="button" id="save8"  class="threebtns">Save</button>
+			<button type="reset"  id="clear8" class="threebtns">Clear</button>
+			<button type="reset"  id="skip8"  class="threebtns">Skip</button>
+		</form>
+
+		<form style="visibility: hidden;position: absolute;" id="q9">
+			<p style="font-weight:bold;">Question 9:</p>
+			<p>What is 12 x 12 ?</p>
+			<input type="radio" name='q9' id="q9_1">144</br>
+			<input type="radio" name='q9' id="q9_2">147</br>
+			<button type="button" id="save9"  class="threebtns">Save</button>
+			<button type="reset"  id="clear9" class="threebtns">Clear</button>
+			<button type="reset"  id="skip9"  class="threebtns">Skip</button>
+		</form>
+
+		<form style="visibility: hidden;position: absolute;" id="q10">
+			<p style="font-weight:bold;">Question 10:</p>
+			<p>What is 6 - 48 ?</p>
+			<input type="radio" name='q10' id="q10_1">-42</br>
+			<input type="radio" name='q10' id="q10_2">-98</br>
+			<button type="button" id="save10"  class="threebtns">Save</button>
+			<button type="reset"  id="clear10" class="threebtns">Clear</button>
+			<button type="reset"  id="skip10"  class="threebtns">Skip</button>
+		</form>
+
+	</div>
+	<div class="side_container">
+		<div class="time_rem">Time Remaining :</div>
+		<p id="timer">10:00</p>
+		<div class="grid-container">
+  			<div id="one"   class="grid-item">1</div>
+  			<div id="two"   class="grid-item">2</div>
+  			<div id="three" class="grid-item">3</div>  
+  			<div id="four"  class="grid-item">4</div>
+  			<div id="five"  class="grid-item">5</div>
+  			<div id="six"   class="grid-item">6</div>  
+  			<div id="seven" class="grid-item">7</div>
+  			<div id="eight" class="grid-item">8</div>
+  			<div id="nine"  class="grid-item">9</div>
+  			<div id="ten"   class="grid-item">10</div>  
+		</div>
+		<button id="sub" class="first_submit">Submit</button>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>
